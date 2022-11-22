@@ -6,10 +6,19 @@ import BottomTabNavigator from './navigation/TabNavigator';
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [loginData, setLoginData] = useState({});
+  const [updateQueries, setUpdateQueries] = useState(false);
+  const [ bookings, setBookings ] = useState([]); 
 
   const userSettings = {
     isLoggedIn, 
-    setIsLoggedIn
+    setIsLoggedIn,
+    loginData,
+    setLoginData, 
+    updateQueries,
+    setUpdateQueries,
+    bookings, 
+    setBookings
   }
 
   return (
